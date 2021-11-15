@@ -89,6 +89,16 @@ li {
   padding: 10px 20px;
 }
 
+/*components organization*/
+.component__title {
+  background-color: var(--gray);
+  padding: 20px;
+  border: 1px solid var(--vulcan);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  margin: 10px;
+}
+
 /*header & nav*/
 .header {
   background-color: #121212;
