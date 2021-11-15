@@ -1,6 +1,32 @@
+@font-face {
+    font-family: 'basier_square_monoregular';
+    src: url('basiersquaremono-regular-webfont.eot');
+    src: url('basiersquaremono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('basiersquaremono-regular-webfont.woff2') format('woff2'),
+         url('basiersquaremono-regular-webfont.woff') format('woff'),
+         url('basiersquaremono-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
   box-sizing: border-box;
   height: 100%;
+
+  --white: #ffffff;
+  --green: #40b95b;
+  --gray: #a6a6a6;
+  --trout: #4b555a;
+  --jungle-dark: #1c2224;
+  --vulcan: #121618;
+  --bunker: #111618;
+
+  --font-sans-bold: "SuisseIntl-Bold", sans-serif;
+  --font-sans-semibold: "SuisseIntl-SemiBold", sans-serif;
+  --font-sans-med: "SuisseIntl-Medium", sans-serif;
+  --font-sans-reg: "SuisseIntl", sans-serif;
+  --font-sans-light: "SuisseIntl-Light", sans-serif;
+  --font-mono: 'basier_square_monoregular', monospace;
+
 }
 *,
 *:before,
@@ -18,6 +44,25 @@ a {
   color: white;
   list-style-type: none;
 }
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-family: var(--font-sans-bold);
+  font-size: 5rem;
+}
+h3 {
+  font-family: var(--font-sans-reg);
+  font-size: 1.25rem;
+}
+h4 {
+ font-family: var(--font-mono);
+ text-transform: uppercase;
+ padding-bottom: 10px;
+}
+
+/*header & nav*/
 .header {
   background-color: #121212;
   margin: 10px;
@@ -42,5 +87,15 @@ a {
   font-size: 8pt;
   padding: 15px 25px 15px 25px;
   margin-left: 20px;
+}
 
+/*hero*/
+.hero {
+  height: 900px;
+  background-image: url(images/hero.jpg);
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 250px 100px 100px;
+  align-items: flex-end;
+  color: white;
 }
