@@ -61,6 +61,26 @@ h4 {
  text-transform: uppercase;
  padding-bottom: 10px;
 }
+/*buttons*/
+.button {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--green);
+}
+.button:hover {
+  text-decoration: underline;
+  transition: 1s;
+  left: 0;
+}
+.button-outline {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 10px 20px;
+}
 
 /*header & nav*/
 .header {
@@ -115,13 +135,25 @@ h4 {
   font-size: 2.5rem;
   padding-right: 100px;
 }
-.button {
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-  color: var(--green);
+
+/*services*/
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bunker);
+  padding: 20px;
 }
-.button:hover {
-  text-decoration: underline;
-  transition: 1s;
-  left: 0;
+.services__image {
+  max-width: 700px;
+}
+.services__text {
+  text-align: right;
+  max-width: 425px;
+  margin-right: 80px;
+}
+.services--description {
+  color: white;
+  font-family: var(--font-sans-light);
+  font-size: 2rem;
 }
