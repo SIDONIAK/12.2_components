@@ -99,3 +99,29 @@ h4 {
   align-items: flex-end;
   color: white;
 }
+
+/*about*/
+.about-page {
+  margin-left: auto;
+  margin-right: auto;
+}
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+}
+.about__text {
+  font-family: var(--font-sans-light);
+  font-size: 2.5rem;
+  padding-right: 100px;
+}
+.button {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--green);
+}
+.button:hover {
+  text-decoration: underline;
+  transition: 1s;
+  left: 0;
+}
