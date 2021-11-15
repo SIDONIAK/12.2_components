@@ -61,6 +61,13 @@ h4 {
  text-transform: uppercase;
  padding-bottom: 10px;
 }
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
 /*buttons*/
 .button {
   font-family: var(--font-mono);
@@ -156,4 +163,49 @@ h4 {
   color: white;
   font-family: var(--font-sans-light);
   font-size: 2rem;
+}
+
+/*Capabilities*/
+.capabilites {
+  background-color: var(--bunker);
+  padding: 0 70px;
+}
+.capabilities--size {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+.cap__title {
+  color: white;
+  font-size: 2.25rem;
+}
+.cap-categories {
+  display: flex;
+}
+.cap-cat {
+  padding: 10px;
+  margin: 70px 20px 70px -10px;
+  font-family: var(--font-mono);
+  font-size: .9rem;
+  text-transform: uppercase;
+  color: var(--trout);
+}
+.cap-cat:hover {
+  color: white;
+  text-decoration: underline;
+}
+.cap-types {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cap--list-item {
+  color: var(--trout);
+  font-family: var(--font-sans-med);
+  font-size: 1rem;
+  padding: 20px;
+  margin-left: -20px;
+  margin-right: 20px;
+}
+.cap--list-item:hover {
+  color: var(--green);
 }
