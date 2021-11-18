@@ -178,7 +178,15 @@ aside {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 10px;
-
+}
+.header-code {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.h1234 {
+  margin: 0px 10px;
+  padding: 20px;
 }
 
 /*buttons*/
