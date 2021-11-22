@@ -130,6 +130,7 @@ li {
 .hero {
   height: 900px;
   background-image: url(images/hero.jpg);
+  background-size: 100%;
   display: flex;
   justify-content: space-between;
   padding: 100px 250px 100px 100px;
