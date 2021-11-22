@@ -306,7 +306,7 @@ aside {
   margin-right: auto;
   max-width: 75%;
 }
-.about__text {
+.body__text {
   font-family: var(--font-sans-light);
   font-size: 2.5rem;
   padding-right: 100px;
@@ -377,4 +377,30 @@ aside {
 }
 .cap--list-item:hover {
   color: var(--green);
+}
+
+/*team*/
+.team {
+  margin-left: auto;
+  margin-right: auto;
+  height: 550px;
+  background-image: url(images/team.jpg);
+  background-size: 100%;
+  max-width: 80%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.collab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+
+
+}
+.collab-item {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
 }
