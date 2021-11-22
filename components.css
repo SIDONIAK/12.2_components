@@ -405,6 +405,19 @@ aside {
   padding: 40px;
 }
 
+/*contact*/
+
+.contact {
+  text-align: center;
+}
+.contact--title {
+  font-size: 3.5rem;
+  padding: 30px;
+}
+.contact--image {
+  padding: 200px 50px 50px 0px;
+}
+
 /*footer*/
 
 .footer {
