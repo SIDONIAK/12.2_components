@@ -57,7 +57,7 @@ h1 {
 }
 h2 {
   font-family: var(--font-sans-bold);
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .subtitle {
   font-family: var(--font-sans-reg);
@@ -284,7 +284,7 @@ aside {
 
 /*hero*/
 .hero {
-  height: 900px;
+  height: 685px;
   background-image: url(images/hero.jpg);
   background-size: 100%;
   display: flex;
@@ -292,6 +292,9 @@ aside {
   padding: 100px 250px 100px 100px;
   align-items: flex-end;
   color: white;
+}
+.hero--title {
+  font-size: 4rem;
 }
 
 /*about*/
