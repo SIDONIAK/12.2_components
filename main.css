@@ -280,9 +280,8 @@ li {
 
 /*team*/
 .team {
-  margin-top: -275px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: -250px auto 100px auto;
+
   height: 550px;
   background-image: url(images/team.jpg);
   background-size: 100%;
@@ -294,21 +293,44 @@ li {
 .collab {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  width: 80%;
+
 
 
 }
+.collab__text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 100px 0px;
+}
 .collab-item {
-  max-width: 75%;
+  max-width: 200px;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
+}
+
+/*process*/
+.process {
+  margin: 200px auto;
+  height: 550px;
+  background-image: url(images/team.jpg);
+  background-size: 100%;
+  max-width: 80%;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 /*contact*/
 
 .contact {
   text-align: center;
+
 }
 .contact--title {
   font-size: 3.5rem;
