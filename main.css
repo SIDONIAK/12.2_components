@@ -216,10 +216,10 @@ li {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bunker);
-  padding: 20px;
+  padding: 200px 20px 200px 20px;
 }
 .services__image {
-  max-width: 700px;
+  max-width: 750px;
 }
 .services__text {
   text-align: right;
@@ -275,4 +275,116 @@ li {
 }
 .cap--list-item:hover {
   color: var(--green);
+}
+
+/*team*/
+.team {
+  margin-left: auto;
+  margin-right: auto;
+  height: 550px;
+  background-image: url(images/team.jpg);
+  background-size: 100%;
+  max-width: 80%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.collab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+
+
+}
+.collab-item {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+/*contact*/
+
+.contact {
+  text-align: center;
+}
+.contact--title {
+  font-size: 3.5rem;
+  padding: 30px;
+}
+.contact--image {
+  padding: 200px 50px 50px 0px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--jungle-dark);
+}
+.foot-top--main {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-top--main-item {
+  font-family: var(--font-sans-semibold);
+  font-size: .8rem;
+  padding: 70px;
+}
+.foot-top--sub {
+  font-family: var(--font-sans-light);
+  font-size: .75rem;
+  padding-top: 20px;
+}
+.footer-top--sub-item {
+  padding: 10px 10px 10px 0px;
+}
+
+.footer-middle {
+  border-top: 1px solid var(--trout);
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.foot-mid--left,
+.foot-mid--right {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+.foot-mid--left-item,
+.foot-mid--right-item {
+  font-family: var(--font-sans-semibold);
+  font-size: .8rem;
+  padding: 20px;
+  align-items: center;
+}
+.footer-bottom {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot-bottom {
+  display: flex;
+  padding: 0px 40px;
+}
+.foot-bottom-right {
+  display: flex;
+  font-size: .55rem;
+  padding: 0px 40px;
+}
+.foot-bottom--item {
+  font-family: var(--font-sans-semibold);
+  padding: 30px;
+}
+.phone {
+  font-family: var(--font-sans-light);
+  font-size: .65rem;
+  color: var(--green);
+}
+.privacypolicy {
+  color: black;
+  padding: 30px;
 }
