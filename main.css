@@ -8,9 +8,13 @@
     font-weight: normal;
     font-style: normal;
 }
+body {
+  margin: 0;
+}
 html {
   box-sizing: border-box;
   height: 100%;
+  margin: 0;
 
   --white: #ffffff;
   --green: #40b95b;
@@ -48,15 +52,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
+h1 {
+  font-size: 4rem;
+  text-align: right;
+  color: var(--jungle-dark);
+}
 h2 {
   font-family: var(--font-sans-bold);
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
-h3 {
+.subtitle {
   font-family: var(--font-sans-reg);
   font-size: 1.25rem;
 }
-h4 {
+.supporting {
  font-family: var(--font-mono);
  text-transform: uppercase;
  padding-bottom: 10px;
@@ -67,17 +76,22 @@ ul {
 li {
   list-style-type: none;
 }
+.body {
+  margin-left: 20%;
+}
+
 
 /*buttons*/
-.button {
+.button-primary {
+  display: inline-block;
   font-family: var(--font-mono);
   text-transform: uppercase;
   color: var(--green);
+  padding: 20px;
 }
-.button:hover {
+.button-primary:hover {
   text-decoration: underline;
-  transition: 1s;
-  left: 0;
+  transition: all 400ms ease-in;
 }
 .button-outline {
   display: inline-block;
@@ -86,22 +100,50 @@ li {
   text-transform: uppercase;
   color: var(--green);
   border: 1px solid var(--green);
-  padding: 10px 20px;
+  padding: 15px 25px 15px 25px;
 }
-
-/*components organization*/
-.component__title {
-  background-color: var(--gray);
-  padding: 20px;
-  border: 1px solid var(--vulcan);
+.button-outline:hover {
+  background-color: var(--green);
+  color: white;
+  transition: all 400ms ease-out;
+}
+.button-solid {
+  display: inline-block;
   font-family: var(--font-mono);
-  font-size: 1rem;
-  margin: 10px;
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  padding: 15px 25px 15px 25px;
+}
+.button-solid:hover {
+  background-color: var(--gray);
+  border: 1px solid var(--gray);
+  transition: all 400ms ease-out;
+}
+.button-contact {
+  display: inline-block;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  border: 1px solid white;
+  font-size: 8pt;
+  padding: 15px 25px 15px 25px;
+  margin-left: 20px;
+}
+.button-contact:hover {
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  transition: all 400ms ease-out;
 }
 
+/*header/nav/hero*/
+.main-page {
+  background-image: url(images/hero.jpg);
+  background-size: 100%;
+}
 /*header & nav*/
 .header {
-  background-color: #121212;
   margin: 10px;
   display: flex;
   justify-content: space-between;
@@ -129,8 +171,7 @@ li {
 /*hero*/
 .hero {
   height: 900px;
-  background-image: url(images/hero.jpg);
-  background-size: 100%;
+
   display: flex;
   justify-content: space-between;
   padding: 100px 250px 100px 100px;
