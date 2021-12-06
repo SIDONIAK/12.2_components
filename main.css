@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'basier_square_monoregular';
-    src: url('basiersquaremono-regular-webfont.eot');
-    src: url('basiersquaremono-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('basiersquaremono-regular-webfont.woff2') format('woff2'),
-         url('basiersquaremono-regular-webfont.woff') format('woff'),
-         url('basiersquaremono-regular-webfont.ttf') format('truetype');
+    src: url('font/basier/webfont/basiersquaremono-regular-webfont.eot');
+    src: url('font/basier/webfont/basiersquaremono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/basier/webfont/basiersquaremono-regular-webfont.woff2') format('woff2'),
+         url('font/basier/webfont/basiersquaremono-regular-webfont.woff') format('woff'),
+         url('font/basier/webfont/basiersquaremono-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -88,12 +88,24 @@ li {
   font-family: var(--font-mono);
   text-transform: uppercase;
   color: var(--green);
-  padding: 20px;
+  margin: 10px 0;
+  padding: 10px 5px;
+  transition: all .4s linear;
+
 }
 .button-primary:hover {
-  text-decoration: underline;
-  transition: all 400ms ease-in;
+  border-bottom: 1px solid var(--green);
 }
+.button-arrow {
+  transition: transform .5s ease-in-out;
+  transition: color .5s ease-in-out;
+  display: inline-block;
+}
+a:hover .button-arrow {
+  transform: translate(5px);
+  color: white;
+}
+
 .button-outline {
   display: inline-block;
   font-family: var(--font-mono);
@@ -106,7 +118,7 @@ li {
 .button-outline:hover {
   background-color: var(--green);
   color: white;
-  transition: all 400ms ease-out;
+  transition: all 0.4s ease-out;
 }
 .button-solid {
   display: inline-block;
@@ -121,7 +133,7 @@ li {
 .button-solid:hover {
   background-color: var(--gray);
   border: 1px solid var(--gray);
-  transition: all 400ms ease-out;
+  transition: all 0.4s ease-out;
 }
 .button-contact {
   display: inline-block;
@@ -138,13 +150,19 @@ li {
   transition: all 400ms ease-out;
 }
 
+
 /*header/nav/hero*/
 .main-page {
-  background-image: url(images/hero.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+
 }
+
 /*header & nav*/
+.fixed {
+  width: 100%;
+  margin-top: -10px;
+  position: fixed;
+
+}
 .header {
   margin: 10px;
   display: flex;
@@ -153,7 +171,7 @@ li {
   padding: 25px;
 }
 .logo {
-  display:  inline;
+  display: inline;
   width: 25px;
 }
 
@@ -161,11 +179,17 @@ li {
   font-family: var(--font-sans-semibold);
   font-size: 2rem;
   color: white;
+  transition: transform 0.5s ease-in-out;
+  margin-left: -85px;
 }
+.logo--fresh:hover {
+  transform: translate(85px);
+}
+
 .fresh {
   opacity: 0%;
 }
-.fresh:hover {
+a:hover .fresh {
   opacity: 100%;
   transition: all 400ms ease-out;
 }
@@ -175,12 +199,22 @@ li {
 .nav-item {
   margin: 0px 20px 0px 20px;
   padding: 15px;
+
+}
+.nav-item:hover {
+  border-bottom: 1px solid white;
+  transition:
+
 }
 
 
 /*hero*/
 .hero {
-  height: 685px;
+  background-image: url(images/hero.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  height: 900px;
   display: flex;
   justify-content: space-between;
   padding: 100px 250px 100px 100px;
@@ -281,7 +315,6 @@ li {
 /*team*/
 .team {
   margin: -250px auto 100px auto;
-
   height: 550px;
   background-image: url(images/team.jpg);
   background-size: 100%;
@@ -289,7 +322,19 @@ li {
   background-repeat: no-repeat;
   color: white;
 }
+.team--text {
+  float: right;
+  max-width: 500px;
+  padding: 50px;
+  align-items: center;
+  margin-top: 40px;
+}
 
+.button--team {
+  margin-top: 50px;
+}
+
+/*collab*/
 .collab {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -324,6 +369,17 @@ li {
   max-width: 80%;
   background-repeat: no-repeat;
   color: white;
+}
+.process--text {
+  float: right;
+  max-width: 500px;
+  margin-top: 40px;
+  padding: 50px;
+  align-items: center;
+}
+
+.button--process {
+  margin-top: 50px;
 }
 
 /*contact*/

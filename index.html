@@ -11,7 +11,6 @@
     <link href="//db.onlinewebfonts.com/c/c446362802681bacaacbad0f39bfc1a5?family=SuisseIntl-Medium" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/88f10bf18a36407ef36bf30bc25a3618?family=SuisseIntl-Regular" rel="stylesheet" type="text/css"/>
     <link href="//db.onlinewebfonts.com/c/03d5b20d124cd26dc873bd4a8e42313e?family=SuisseIntl-Light" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="basier-mono.css">
 
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/175e9e1262.js" crossorigin="anonymous"></script>
@@ -22,25 +21,32 @@
 
 <!--header/nav/hero-->
     <div class="main-page">
+
 <!--header & nav-->
 
-    <header class="header">
-      <img class="logo" src="images/fresh_logo-whtie.svg" alt="fresh logo">
-      <div>
-        <ul class="header navbar">
-          <li class="nav-item"><a href="#">Services</a></li>
-          <li class="nav-item"><a href="#">Insights</a></li>
-          <li class="nav-item"><a href="#">Work</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Careers</a></li>
-          <li class="nav-item--contact"><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </header>
+    <div class="fixed">
+      <header class="header">
+        <a href="index.html" class="logo--fresh">
+          <span class="fresh">Fresh</span>
+          <img class="logo" src="images/fresh_logo-whtie.svg" alt="fresh logo">
+        </a>
+        <div>
+          <ul class="header navbar">
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Insights</a></li>
+            <li class="nav-item"><a href="#">Work</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Careers</a></li>
+            <li class="nav-item--contact"><a class="button-outline" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
 
   <!--hero-->
 
     <section class="hero">
+
       <h2 class="title">Industrial<br>Design</h2>
       <div class="project">
         <h4 class="client">Microsoft</h4>
@@ -54,7 +60,7 @@
 
     <section class="about">
       <p class="body__text">We believe in technology for good. We strive to build better human experiences, so people have more freedom to achieve their full potential.</p>
-      <div class="button">Learn More &#10132;</div>
+      <a class="button-primary" href="#">Learn More <span class="button-arrow">&#10132;</span></a>
     </section>
 
 
@@ -162,9 +168,11 @@
 
 <!--team-->
     <section class="team">
-      <p class="supporting">Who We Are</p>
-      <h2 class="title">Meet the team behind our work</h2>
-      <div class="button-solid">See Our Team</div>
+      <div class="team--text">
+        <p class="supporting">Who We Are</p>
+        <h2 class="title">Meet the team behind our work</h2>
+        <a href="#" class="button-solid button--team">See Our Team</a>
+      </div>
     </section>
 
 <!--collaboration-->
@@ -190,9 +198,11 @@
 <!--Process-->
 
     <section class="process">
-      <p class="supporting">How we do things</p>
-      <h2 class="title">Our process explained</h2>
-      <div class="button-solid">See All Our Process</div>
+      <div class="process--text">
+        <p class="supporting">How we do things</p>
+        <h2 class="title">Our process explained</h2>
+        <a href="#" class="button-solid button--process">See All Our Process</a>
+      </div>
     </section>
 
 <!--Contact-->
