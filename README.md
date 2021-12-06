@@ -13,4 +13,3 @@ This is a project for the Web Development course at the Minneapolis College of A
 ## Author
 
 Sidonia Kelly
-Source Design: [Fresh Consulting](https://www.freshconsulting.com/)
