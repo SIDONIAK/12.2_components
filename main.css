@@ -151,11 +151,6 @@ a:hover .button-arrow {
 }
 
 
-/*header/nav/hero*/
-.main-page {
-
-}
-
 /*header & nav*/
 .fixed {
   width: 100%;
@@ -191,7 +186,8 @@ a:hover .button-arrow {
 }
 a:hover .fresh {
   opacity: 100%;
-  transition: all 400ms ease-out;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
 }
 .navbar {
   padding: 0;
@@ -203,8 +199,6 @@ a:hover .fresh {
 }
 .nav-item:hover {
   border-bottom: 1px solid white;
-  transition:
-
 }
 
 
@@ -364,7 +358,7 @@ a:hover .fresh {
 .process {
   margin: 200px auto;
   height: 550px;
-  background-image: url(images/team.jpg);
+  background-image: url(images/process.jpg);
   background-size: 100%;
   max-width: 80%;
   background-repeat: no-repeat;
